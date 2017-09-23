@@ -8,20 +8,63 @@
 
 /* Begin PBXBuildFile section */
 		93B352661F76A44C005FC96A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B352651F76A44C005FC96A /* AppDelegate.swift */; };
-		93B352681F76A44C005FC96A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B352671F76A44C005FC96A /* ViewController.swift */; };
 		93B3526B1F76A44C005FC96A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B352691F76A44C005FC96A /* Main.storyboard */; };
 		93B3526D1F76A44C005FC96A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93B3526C1F76A44C005FC96A /* Assets.xcassets */; };
 		93B352701F76A44C005FC96A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B3526E1F76A44C005FC96A /* LaunchScreen.storyboard */; };
+		93B3528B1F76A727005FC96A /* XLPagerTabStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B352881F76A66A005FC96A /* XLPagerTabStrip.framework */; };
+		93B3528C1F76A727005FC96A /* XLPagerTabStrip.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93B352881F76A66A005FC96A /* XLPagerTabStrip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		93B352911F76A7D5005FC96A /* PageTabStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B352901F76A7D5005FC96A /* PageTabStrip.swift */; };
+		93B352941F76AAA5005FC96A /* ChildCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B352931F76AAA5005FC96A /* ChildCollectionViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93B352871F76A66A005FC96A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93B352821F76A66A005FC96A /* XLPagerTabStrip.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 28F8287D1C494B2C00330CF4;
+			remoteInfo = XLPagerTabStrip;
+		};
+		93B352891F76A66A005FC96A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93B352821F76A66A005FC96A /* XLPagerTabStrip.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 28F828871C494B2C00330CF4;
+			remoteInfo = XLPagerTabStripTests;
+		};
+		93B3528D1F76A727005FC96A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93B352821F76A66A005FC96A /* XLPagerTabStrip.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 28F8287C1C494B2C00330CF4;
+			remoteInfo = XLPagerTabStrip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		93B3528F1F76A727005FC96A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				93B3528C1F76A727005FC96A /* XLPagerTabStrip.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		93B352621F76A44C005FC96A /* TabPageTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabPageTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B352651F76A44C005FC96A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		93B352671F76A44C005FC96A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		93B3526A1F76A44C005FC96A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93B3526C1F76A44C005FC96A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93B3526F1F76A44C005FC96A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93B352711F76A44C005FC96A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93B352821F76A66A005FC96A /* XLPagerTabStrip.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XLPagerTabStrip.xcodeproj; path = XLPagerTabStrip/XLPagerTabStrip.xcodeproj; sourceTree = SOURCE_ROOT; };
+		93B352901F76A7D5005FC96A /* PageTabStrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTabStrip.swift; sourceTree = "<group>"; };
+		93B352931F76AAA5005FC96A /* ChildCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93B3528B1F76A727005FC96A /* XLPagerTabStrip.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +98,25 @@
 		93B352641F76A44C005FC96A /* TabPageTest */ = {
 			isa = PBXGroup;
 			children = (
+				93B352821F76A66A005FC96A /* XLPagerTabStrip.xcodeproj */,
 				93B352651F76A44C005FC96A /* AppDelegate.swift */,
-				93B352671F76A44C005FC96A /* ViewController.swift */,
+				93B352901F76A7D5005FC96A /* PageTabStrip.swift */,
+				93B352931F76AAA5005FC96A /* ChildCollectionViewController.swift */,
 				93B352691F76A44C005FC96A /* Main.storyboard */,
 				93B3526C1F76A44C005FC96A /* Assets.xcassets */,
 				93B3526E1F76A44C005FC96A /* LaunchScreen.storyboard */,
 				93B352711F76A44C005FC96A /* Info.plist */,
 			);
 			path = TabPageTest;
+			sourceTree = "<group>";
+		};
+		93B352831F76A66A005FC96A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93B352881F76A66A005FC96A /* XLPagerTabStrip.framework */,
+				93B3528A1F76A66A005FC96A /* XLPagerTabStripTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,10 +129,12 @@
 				93B3525E1F76A44C005FC96A /* Sources */,
 				93B3525F1F76A44C005FC96A /* Frameworks */,
 				93B352601F76A44C005FC96A /* Resources */,
+				93B3528F1F76A727005FC96A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				93B3528E1F76A727005FC96A /* PBXTargetDependency */,
 			);
 			name = TabPageTest;
 			productName = TabPageTest;
@@ -111,12 +168,35 @@
 			mainGroup = 93B352591F76A44C005FC96A;
 			productRefGroup = 93B352631F76A44C005FC96A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 93B352831F76A66A005FC96A /* Products */;
+					ProjectRef = 93B352821F76A66A005FC96A /* XLPagerTabStrip.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				93B352611F76A44C005FC96A /* TabPageTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		93B352881F76A66A005FC96A /* XLPagerTabStrip.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XLPagerTabStrip.framework;
+			remoteRef = 93B352871F76A66A005FC96A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		93B3528A1F76A66A005FC96A /* XLPagerTabStripTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = XLPagerTabStripTests.xctest;
+			remoteRef = 93B352891F76A66A005FC96A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		93B352601F76A44C005FC96A /* Resources */ = {
@@ -136,12 +216,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93B352681F76A44C005FC96A /* ViewController.swift in Sources */,
+				93B352911F76A7D5005FC96A /* PageTabStrip.swift in Sources */,
+				93B352941F76AAA5005FC96A /* ChildCollectionViewController.swift in Sources */,
 				93B352661F76A44C005FC96A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93B3528E1F76A727005FC96A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XLPagerTabStrip;
+			targetProxy = 93B3528D1F76A727005FC96A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		93B352691F76A44C005FC96A /* Main.storyboard */ = {
@@ -273,6 +362,7 @@
 		93B352751F76A44C005FC96A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CALM89H945;
@@ -288,6 +378,7 @@
 		93B352761F76A44C005FC96A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CALM89H945;
